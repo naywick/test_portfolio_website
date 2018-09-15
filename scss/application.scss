@@ -1,0 +1,49 @@
+@import 'normalize';
+
+$dark: #424652;
+$light: #9A9DA4;
+$highlight: #53FEA2;
+$light-gray: #E9E9E9;
+$dark-gray: #252627;
+$pink: #F91656;
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: $dark-gray;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+#main_navigation {
+  padding: 2.5em 5%;
+  border-bottom: 1px solid $light-gray;
+  .name {
+    font-weight: 700;
+    font-size: .7em;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    border: 2px solid $light-gray;
+    padding: 1rem;
+    text-decoration: none;
+    color: $highlight;
+    float: left;
+  }
+  nav {
+    float: right;
+    padding-top: .9rem;
+    a {
+      color: $light-gray;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-size: 1rem;
+    }
+  }
+}
