@@ -4,6 +4,7 @@ $dark: #424652;
 $light: #9A9DA4;
 $highlight: #53FEA2;
 $light-gray: #E9E9E9;
+// used to be border ^
 $dark-gray: #252627;
 $pink: #F91656;
 
@@ -91,10 +92,31 @@ p, ul, ol {
     float: right;
     padding-top: .9rem;
     a {
-      color: $light-gray;
+      color: $light;
       text-decoration: none;
       margin: 0 1rem;
       font-size: 1rem;
+    }
+  }
+}
+
+#main_footer {
+  padding: 2.5em 5%;
+  border-top: 1px solid $light-gray;
+  .copyright {
+    float: left;
+    font-size: .9em;
+    margin: 0;
+  }
+  nav {
+    float: right;
+    i {
+      color: $dark;
+      margin-left: 1em;
+      padding-top: .2em;
+      &:hover {
+        color: $highlight;
+      }
     }
   }
 }
