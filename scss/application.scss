@@ -2,6 +2,7 @@
 
 $dark: #424652;
 $light: #9A9DA4;
+$white: #FFFFFF;
 $highlight: #53FEA2;
 $light-gray: #E9E9E9;
 // used to be border ^
@@ -21,6 +22,12 @@ body {
   width: 90%;
   margin: 0 auto;
   overflow: auto;
+}
+
+.skinny_wrapper {
+  width: 80%;
+  max-width: 760px;
+  margin: 0 auto;
 }
 
 .wrapper_padding {
@@ -74,6 +81,15 @@ p, ul, ol {
   margin: 0 0 1.6em 0;
 }
 
+hr {
+  width: 3em;
+  display: block;
+  height: 2px;
+  border: 0;
+  border-top: 2px solid $highlight;
+  margin: 2rem 0;
+}
+
 #main_navigation {
   padding: 1.9em 5%;
   border-bottom: 1px solid $light-gray;
@@ -100,6 +116,14 @@ p, ul, ol {
   }
 }
 
+#page_title {
+   text-align: center;
+   border-bottom: 1px solid $light-gray;
+   padding: 3em 0;
+   font-size: 1rem;
+   text-transform: uppercase;
+}
+
 #main_footer {
   padding: 2.5em 5%;
   border-top: 1px solid $light-gray;
@@ -122,3 +146,5 @@ p, ul, ol {
 }
 
 @import 'welcome';
+@import 'post_project.scss';
+
