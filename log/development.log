@@ -743,3 +743,453 @@ Completed 200 OK in 58ms (Views: 49.1ms | ActiveRecord: 0.0ms)
 
 
   [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+Started GET "/posts" for 127.0.0.1 at 2018-09-18 20:47:27 +0700
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 233ms (Views: 225.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-09-18 20:51:01 +0700
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 34ms (Views: 29.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-09-18 20:52:00 +0700
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 36ms (Views: 32.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-09-18 20:52:04 +0700
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 35ms (Views: 33.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-09-18 20:52:07 +0700
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 42ms (Views: 39.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2018-09-18 20:52:16 +0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (1.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:46
+Completed 404 Not Found in 4ms (ActiveRecord: 1.3ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=1):
+  
+app/controllers/posts_controller.rb:46:in `find_post'
+Started GET "/" for 127.0.0.1 at 2018-09-18 20:52:22 +0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/nayelawickramasuriya/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/nayelawickramasuriya/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (2.6ms)
+Completed 200 OK in 17ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+
+
+Started PATCH "/posts/1" for 127.0.0.1 at 2018-09-18 20:52:28 +0700
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bAQJdMHGpfU+E2c9JQfb1oFAP9G6geCk8bJAXNkiKUL2hfzccyUrsKOGaW+rHE8Rrmt53MTpTzmF6js3ieEQ+g==", "post"=>{"title"=>"test post", "content"=>"This should be the post body"}, "commit"=>"Update Post", "id"=>"1"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:46
+Completed 404 Not Found in 2ms (ActiveRecord: 0.3ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=1):
+  
+app/controllers/posts_controller.rb:46:in `find_post'
+Started GET "/posts" for 127.0.0.1 at 2018-09-18 20:52:32 +0700
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 40ms (Views: 36.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-09-18 20:54:02 +0700
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 135ms (Views: 130.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-09-18 20:59:36 +0700
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 60ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Undefined variable: "$dark".):
+     9:     <%= csrf_meta_tags %>
+    10:     <%= csp_meta_tag %>
+    11: 
+    12:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    13:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    14:   </head>
+    15: 
+  
+app/assets/stylesheets/_posts_projects.css.scss:15
+app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___4327874761783651668_70176560754240'
+Started GET "/posts" for 127.0.0.1 at 2018-09-18 21:00:35 +0700
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 50ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Undefined variable: "$dark".):
+     9:     <%= csrf_meta_tags %>
+    10:     <%= csp_meta_tag %>
+    11: 
+    12:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    13:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    14:   </head>
+    15: 
+  
+app/assets/stylesheets/_posts_projects.css.scss:15
+app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___4327874761783651668_70176545435080'
+Started GET "/posts" for 127.0.0.1 at 2018-09-18 21:03:23 +0700
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.4ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_normalize.css.scss to /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___4327874761783651668_70176548537320 at /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/views/layouts/application.html.erb:12)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_welcome.css.scss to /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_welcome.scss. (called from _app_views_layouts_application_html_erb___4327874761783651668_70176548537320 at /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/views/layouts/application.html.erb:12)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_posts_projects.css.scss to /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_posts_projects.scss. (called from _app_views_layouts_application_html_erb___4327874761783651668_70176548537320 at /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/views/layouts/application.html.erb:12)
+Completed 500 Internal Server Error in 103ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (File to import not found or unreadable: contact_form.scss.
+Load paths:
+  /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/config
+  /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/images
+  /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/javascripts
+  /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/node_modules
+  /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets
+  /Users/nayelawickramasuriya/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/nayelawickramasuriya/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actioncable-5.2.1/lib/assets/compiled
+  /Users/nayelawickramasuriya/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activestorage-5.2.1/app/assets/javascripts
+  /Users/nayelawickramasuriya/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionview-5.2.1/lib/assets/compiled
+  /Users/nayelawickramasuriya/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/node_modules):
+     9:     <%= csrf_meta_tags %>
+    10:     <%= csp_meta_tag %>
+    11: 
+    12:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    13:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    14:   </head>
+    15: 
+  
+app/assets/stylesheets/application.css.scss:197
+app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___4327874761783651668_70176548537320'
+Started GET "/posts" for 127.0.0.1 at 2018-09-18 21:03:34 +0700
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.5ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_normalize.css.scss to /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___4327874761783651668_70176603332320 at /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/views/layouts/application.html.erb:12)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_welcome.css.scss to /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_welcome.scss. (called from _app_views_layouts_application_html_erb___4327874761783651668_70176603332320 at /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/views/layouts/application.html.erb:12)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_posts_projects.css.scss to /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_posts_projects.scss. (called from _app_views_layouts_application_html_erb___4327874761783651668_70176603332320 at /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/views/layouts/application.html.erb:12)
+Completed 500 Internal Server Error in 83ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (File to import not found or unreadable: contact_form.scss.
+Load paths:
+  /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/config
+  /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/images
+  /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/javascripts
+  /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/node_modules
+  /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets
+  /Users/nayelawickramasuriya/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/nayelawickramasuriya/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actioncable-5.2.1/lib/assets/compiled
+  /Users/nayelawickramasuriya/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activestorage-5.2.1/app/assets/javascripts
+  /Users/nayelawickramasuriya/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionview-5.2.1/lib/assets/compiled
+  /Users/nayelawickramasuriya/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/node_modules):
+     9:     <%= csrf_meta_tags %>
+    10:     <%= csp_meta_tag %>
+    11: 
+    12:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    13:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    14:   </head>
+    15: 
+  
+app/assets/stylesheets/application.css.scss:197
+app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___4327874761783651668_70176603332320'
+Started GET "/posts" for 127.0.0.1 at 2018-09-18 21:04:24 +0700
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.3ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_normalize.css.scss to /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___4327874761783651668_70176580690640 at /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/views/layouts/application.html.erb:12)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_welcome.css.scss to /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_welcome.scss. (called from _app_views_layouts_application_html_erb___4327874761783651668_70176580690640 at /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/views/layouts/application.html.erb:12)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_posts_projects.css.scss to /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_posts_projects.scss. (called from _app_views_layouts_application_html_erb___4327874761783651668_70176580690640 at /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/views/layouts/application.html.erb:12)
+Completed 500 Internal Server Error in 42ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (File to import not found or unreadable: contact_form.scss.
+Load paths:
+  /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/config
+  /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/images
+  /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/javascripts
+  /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/node_modules
+  /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets
+  /Users/nayelawickramasuriya/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/nayelawickramasuriya/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actioncable-5.2.1/lib/assets/compiled
+  /Users/nayelawickramasuriya/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activestorage-5.2.1/app/assets/javascripts
+  /Users/nayelawickramasuriya/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionview-5.2.1/lib/assets/compiled
+  /Users/nayelawickramasuriya/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/node_modules):
+     9:     <%= csrf_meta_tags %>
+    10:     <%= csp_meta_tag %>
+    11: 
+    12:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    13:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    14:   </head>
+    15: 
+  
+app/assets/stylesheets/application.css.scss:197
+app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___4327874761783651668_70176580690640'
+Started GET "/posts" for 127.0.0.1 at 2018-09-18 21:04:39 +0700
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.3ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_normalize.css.scss to /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___4327874761783651668_70176580360780 at /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/views/layouts/application.html.erb:12)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_welcome.css.scss to /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_welcome.scss. (called from _app_views_layouts_application_html_erb___4327874761783651668_70176580360780 at /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/views/layouts/application.html.erb:12)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_posts_projects.css.scss to /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_posts_projects.scss. (called from _app_views_layouts_application_html_erb___4327874761783651668_70176580360780 at /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/views/layouts/application.html.erb:12)
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (File to import not found or unreadable: contact_form.scss.
+Load paths:
+  /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/config
+  /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/images
+  /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/javascripts
+  /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/node_modules
+  /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets
+  /Users/nayelawickramasuriya/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/nayelawickramasuriya/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actioncable-5.2.1/lib/assets/compiled
+  /Users/nayelawickramasuriya/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activestorage-5.2.1/app/assets/javascripts
+  /Users/nayelawickramasuriya/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionview-5.2.1/lib/assets/compiled
+  /Users/nayelawickramasuriya/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/node_modules):
+     9:     <%= csrf_meta_tags %>
+    10:     <%= csp_meta_tag %>
+    11: 
+    12:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    13:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    14:   </head>
+    15: 
+  
+app/assets/stylesheets/application.css.scss:197
+app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___4327874761783651668_70176580360780'
+Started GET "/posts" for 127.0.0.1 at 2018-09-18 21:06:14 +0700
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.3ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_normalize.css.scss to /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___4327874761783651668_70176590880060 at /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/views/layouts/application.html.erb:12)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_welcome.css.scss to /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_welcome.scss. (called from _app_views_layouts_application_html_erb___4327874761783651668_70176590880060 at /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/views/layouts/application.html.erb:12)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_posts_projects.css.scss to /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_posts_projects.scss. (called from _app_views_layouts_application_html_erb___4327874761783651668_70176590880060 at /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/views/layouts/application.html.erb:12)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_normalize.css.scss to /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___4327874761783651668_70176590880060 at /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/views/layouts/application.html.erb:12)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_welcome.css.scss to /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_welcome.scss. (called from _app_views_layouts_application_html_erb___4327874761783651668_70176590880060 at /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/views/layouts/application.html.erb:12)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_posts_projects.css.scss to /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_posts_projects.scss. (called from _app_views_layouts_application_html_erb___4327874761783651668_70176590880060 at /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/views/layouts/application.html.erb:12)
+Completed 500 Internal Server Error in 112ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Undefined variable: "$dark-gray".):
+     9:     <%= csrf_meta_tags %>
+    10:     <%= csp_meta_tag %>
+    11: 
+    12:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    13:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    14:   </head>
+    15: 
+  
+app/assets/stylesheets/_contact_form.css.scss:16
+app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___4327874761783651668_70176590880060'
+Started GET "/posts" for 127.0.0.1 at 2018-09-18 21:07:07 +0700
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.3ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_normalize.css.scss to /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___4327874761783651668_70176556638800 at /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/views/layouts/application.html.erb:12)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_welcome.css.scss to /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_welcome.scss. (called from _app_views_layouts_application_html_erb___4327874761783651668_70176556638800 at /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/views/layouts/application.html.erb:12)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_posts_projects.css.scss to /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_posts_projects.scss. (called from _app_views_layouts_application_html_erb___4327874761783651668_70176556638800 at /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/views/layouts/application.html.erb:12)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_normalize.css.scss to /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___4327874761783651668_70176556638800 at /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/views/layouts/application.html.erb:12)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_welcome.css.scss to /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_welcome.scss. (called from _app_views_layouts_application_html_erb___4327874761783651668_70176556638800 at /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/views/layouts/application.html.erb:12)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_posts_projects.css.scss to /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_posts_projects.scss. (called from _app_views_layouts_application_html_erb___4327874761783651668_70176556638800 at /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/views/layouts/application.html.erb:12)
+Completed 500 Internal Server Error in 96ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Undefined variable: "$dark".):
+     9:     <%= csrf_meta_tags %>
+    10:     <%= csp_meta_tag %>
+    11: 
+    12:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    13:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    14:   </head>
+    15: 
+  
+app/assets/stylesheets/_posts_projects.css.scss:15
+app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___4327874761783651668_70176556638800'
+Started GET "/posts" for 127.0.0.1 at 2018-09-18 21:08:30 +0700
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.3ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Undefined variable: "$dark".):
+     9:     <%= csrf_meta_tags %>
+    10:     <%= csp_meta_tag %>
+    11: 
+    12:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    13:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    14:   </head>
+    15: 
+  
+app/assets/stylesheets/_posts_projects.css.scss:15
+app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___4327874761783651668_70176560234360'
+Started GET "/posts" for 127.0.0.1 at 2018-09-18 21:09:16 +0700
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.8ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_normalize.css.scss to /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___4327874761783651668_70176580658400 at /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/views/layouts/application.html.erb:12)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_welcome.css.scss to /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_welcome.scss. (called from _app_views_layouts_application_html_erb___4327874761783651668_70176580658400 at /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/views/layouts/application.html.erb:12)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_posts_projects.css.scss to /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_posts_projects.scss. (called from _app_views_layouts_application_html_erb___4327874761783651668_70176580658400 at /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/views/layouts/application.html.erb:12)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_normalize.css.scss to /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___4327874761783651668_70176580658400 at /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/views/layouts/application.html.erb:12)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_welcome.css.scss to /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_welcome.scss. (called from _app_views_layouts_application_html_erb___4327874761783651668_70176580658400 at /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/views/layouts/application.html.erb:12)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_posts_projects.css.scss to /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_posts_projects.scss. (called from _app_views_layouts_application_html_erb___4327874761783651668_70176580658400 at /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/views/layouts/application.html.erb:12)
+Completed 500 Internal Server Error in 96ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Undefined variable: "$highlight".):
+     9:     <%= csrf_meta_tags %>
+    10:     <%= csp_meta_tag %>
+    11: 
+    12:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    13:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    14:   </head>
+    15: 
+  
+app/assets/stylesheets/_posts_projects.css.scss:17
+app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___4327874761783651668_70176580658400'
+Started GET "/posts" for 127.0.0.1 at 2018-09-18 21:11:04 +0700
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.3ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_normalize.css.scss to /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___4327874761783651668_70176548395960 at /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/views/layouts/application.html.erb:12)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_welcome.css.scss to /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_welcome.scss. (called from _app_views_layouts_application_html_erb___4327874761783651668_70176548395960 at /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/views/layouts/application.html.erb:12)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_posts_projects.css.scss to /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_posts_projects.scss. (called from _app_views_layouts_application_html_erb___4327874761783651668_70176548395960 at /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/views/layouts/application.html.erb:12)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_contact_form.css.scss to /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_contact_form.scss. (called from _app_views_layouts_application_html_erb___4327874761783651668_70176548395960 at /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/views/layouts/application.html.erb:12)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_welcome.css.scss to /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_welcome.scss. (called from _app_views_layouts_application_html_erb___4327874761783651668_70176548395960 at /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/views/layouts/application.html.erb:12)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_normalize.css.scss to /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___4327874761783651668_70176548395960 at /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/views/layouts/application.html.erb:12)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_welcome.css.scss to /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_welcome.scss. (called from _app_views_layouts_application_html_erb___4327874761783651668_70176548395960 at /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/views/layouts/application.html.erb:12)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_posts_projects.css.scss to /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_posts_projects.scss. (called from _app_views_layouts_application_html_erb___4327874761783651668_70176548395960 at /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/views/layouts/application.html.erb:12)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_contact_form.css.scss to /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_contact_form.scss. (called from _app_views_layouts_application_html_erb___4327874761783651668_70176548395960 at /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/views/layouts/application.html.erb:12)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_welcome.css.scss to /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_welcome.scss. (called from _app_views_layouts_application_html_erb___4327874761783651668_70176548395960 at /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/views/layouts/application.html.erb:12)
+Completed 500 Internal Server Error in 132ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Undefined variable: "$dark".):
+     9:     <%= csrf_meta_tags %>
+    10:     <%= csp_meta_tag %>
+    11: 
+    12:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    13:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    14:   </head>
+    15: 
+  
+app/assets/stylesheets/_posts_projects.css.scss:15
+app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___4327874761783651668_70176548395960'
+Started GET "/posts" for 127.0.0.1 at 2018-09-18 21:17:37 +0700
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.7ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_normalize.css.scss to /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___4327874761783651668_70176556589100 at /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/views/layouts/application.html.erb:12)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_welcome.css.scss to /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_welcome.scss. (called from _app_views_layouts_application_html_erb___4327874761783651668_70176556589100 at /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/views/layouts/application.html.erb:12)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_posts_projects.css.scss to /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_posts_projects.scss. (called from _app_views_layouts_application_html_erb___4327874761783651668_70176556589100 at /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/views/layouts/application.html.erb:12)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_contact_form.css.scss to /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_contact_form.scss. (called from _app_views_layouts_application_html_erb___4327874761783651668_70176556589100 at /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/views/layouts/application.html.erb:12)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_welcome.css.scss to /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_welcome.scss. (called from _app_views_layouts_application_html_erb___4327874761783651668_70176556589100 at /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/views/layouts/application.html.erb:12)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_normalize.css.scss to /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___4327874761783651668_70176556589100 at /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/views/layouts/application.html.erb:12)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_welcome.css.scss to /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_welcome.scss. (called from _app_views_layouts_application_html_erb___4327874761783651668_70176556589100 at /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/views/layouts/application.html.erb:12)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_posts_projects.css.scss to /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_posts_projects.scss. (called from _app_views_layouts_application_html_erb___4327874761783651668_70176556589100 at /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/views/layouts/application.html.erb:12)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_contact_form.css.scss to /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_contact_form.scss. (called from _app_views_layouts_application_html_erb___4327874761783651668_70176556589100 at /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/views/layouts/application.html.erb:12)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_welcome.css.scss to /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_welcome.scss. (called from _app_views_layouts_application_html_erb___4327874761783651668_70176556589100 at /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/views/layouts/application.html.erb:12)
+Completed 500 Internal Server Error in 103ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Undefined variable: "$dark".):
+     9:     <%= csrf_meta_tags %>
+    10:     <%= csp_meta_tag %>
+    11: 
+    12:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    13:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    14:   </head>
+    15: 
+  
+app/assets/stylesheets/_posts_projects.css.scss:15
+app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___4327874761783651668_70176556589100'
+Started GET "/posts" for 127.0.0.1 at 2018-09-18 21:19:11 +0700
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Undefined variable: "$dark".):
+     9:     <%= csrf_meta_tags %>
+    10:     <%= csp_meta_tag %>
+    11: 
+    12:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    13:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    14:   </head>
+    15: 
+  
+app/assets/stylesheets/_posts_projects.css.scss:15
+app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___4327874761783651668_70176578830880'
+Started GET "/posts" for 127.0.0.1 at 2018-09-18 21:23:24 +0700
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.4ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_normalize.css.scss to /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___4327874761783651668_70176592034860 at /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/views/layouts/application.html.erb:12)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_welcome.css.scss to /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_welcome.scss. (called from _app_views_layouts_application_html_erb___4327874761783651668_70176592034860 at /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/views/layouts/application.html.erb:12)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_posts_projects.css.scss to /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_posts_projects.scss. (called from _app_views_layouts_application_html_erb___4327874761783651668_70176592034860 at /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/views/layouts/application.html.erb:12)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_normalize.css.scss to /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___4327874761783651668_70176592034860 at /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/views/layouts/application.html.erb:12)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_welcome.css.scss to /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_welcome.scss. (called from _app_views_layouts_application_html_erb___4327874761783651668_70176592034860 at /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/views/layouts/application.html.erb:12)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_posts_projects.css.scss to /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/assets/stylesheets/_posts_projects.scss. (called from _app_views_layouts_application_html_erb___4327874761783651668_70176592034860 at /Users/nayelawickramasuriya/code/naywick/test_portfolio_website/app/views/layouts/application.html.erb:12)
+Completed 500 Internal Server Error in 99ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Undefined variable: "$dark".):
+     9:     <%= csrf_meta_tags %>
+    10:     <%= csp_meta_tag %>
+    11: 
+    12:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    13:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    14:   </head>
+    15: 
+  
+app/assets/stylesheets/_posts_projects.css.scss:15
+app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___4327874761783651668_70176592034860'
