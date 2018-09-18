@@ -9,6 +9,13 @@
 	],
 "creatorBuild": "26680",
 "files": {
+	"\/article_show.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/article_show.html",
+		"oF": 0
+		},
 	"\/articles.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -96,6 +103,19 @@
 		"oAP": "\/scss\/application.css",
 		"oF": 0,
 		"oS": 3,
+		"uL": 1
+		},
+	"\/scss\/contact_form.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/scss\/contact_form.css",
+		"oF": 0,
+		"oS": 0,
 		"uL": 1
 		},
 	"\/scss\/post_project.css": {
