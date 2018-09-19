@@ -64,6 +64,17 @@
 		"sC": 1,
 		"tS": 1
 		},
+	"\/app\/assets\/javascripts\/welcome.coffee": {
+		"ft": 32,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/app\/assets\/javascripts\/welcome.js",
+		"oF": 0,
+		"oS": 0,
+		"sC": 1,
+		"tS": 1
+		},
 	"\/app\/assets\/node_modules": {
 		"ft": 65536,
 		"oA": 2,
@@ -197,6 +208,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/app\/assets\/stylesheets\/welcome.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/app\/assets\/stylesheets\/welcome.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/app\/channels\/application_cable\/channel.rb": {
 		"cB": 0,
 		"ft": 8192,
@@ -232,6 +256,13 @@
 		"oAP": "\/app\/controllers\/posts_controller.rb",
 		"oF": 0
 		},
+	"\/app\/controllers\/welcome_controller.rb": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/controllers\/welcome_controller.rb",
+		"oF": 0
+		},
 	"\/app\/helpers\/application_helper.rb": {
 		"cB": 0,
 		"ft": 8192,
@@ -244,6 +275,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/app\/helpers\/posts_helper.rb",
+		"oF": 0
+		},
+	"\/app\/helpers\/welcome_helper.rb": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/helpers\/welcome_helper.rb",
 		"oF": 0
 		},
 	"\/app\/jobs\/application_job.rb": {
@@ -363,6 +401,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/app\/views\/posts\/show.html.erb",
+		"oF": 0
+		},
+	"\/app\/views\/welcome\/index.html.erb": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/views\/welcome\/index.html.erb",
 		"oF": 0
 		},
 	"\/bin\/bundle": {
@@ -775,6 +820,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/test\/controllers\/posts_controller_test.rb",
+		"oF": 0
+		},
+	"\/test\/controllers\/welcome_controller_test.rb": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/test\/controllers\/welcome_controller_test.rb",
 		"oF": 0
 		},
 	"\/test\/fixtures\/.keep": {
