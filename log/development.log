@@ -2786,3 +2786,206 @@ Processing by PostsController#show as HTML
 Completed 200 OK in 50ms (Views: 41.0ms | ActiveRecord: 1.4ms)
 
 
+Started GET "/posts/3" for 127.0.0.1 at 2018-09-20 09:43:44 +0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:46
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 157ms (Views: 139.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts/3/edit" for 127.0.0.1 at 2018-09-20 09:43:55 +0700
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:46
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (15.3ms)
+  Rendered posts/edit.html.erb within layouts/application (21.1ms)
+Completed 200 OK in 96ms (Views: 91.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/3/edit" for 127.0.0.1 at 2018-09-20 09:44:09 +0700
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:46
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (5.8ms)
+  Rendered posts/edit.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 82ms (Views: 77.1ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/posts/3" for 127.0.0.1 at 2018-09-20 09:44:46 +0700
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b86XDfff44H1WRBjZUUgGyfLtniwUQXgHcn5OUZBaSilWQ2SjXhwMHVnYW1IEb/nCmm70n0Dkrjya1KU85W/Ig==", "post"=>{"title"=>"This is a new post", "content"=>"Mlkshk meditation wayfarers lomo flannel occupy. Gluten-free blog selvage, hammock unicorn palo santo fanny pack freegan man braid glossier try-hard 3 wolf moon tacos. Food truck blue bottle pop-up, seitan crucifix polaroid flexitarian sartorial four loko snackwave literally lo-fi actually vice. Paleo cray fashion axe deep v celiac.\r\n\r\n```ruby\r\nputs \"Hello world!\"\r\n```\r\n\r\nChartreuse gastropub selfies chillwave cloud bread irony retro slow-carb twee whatever you probably haven't heard of them street art intelligentsia flexitarian. Normcore DIY pork belly subway tile 8-bit selvage. 8-bit hot chicken bicycle rights quinoa hashtag whatever copper mug umami sriracha hell of. Snackwave gastropub brooklyn, swag trust fund farm-to-table glossier hell of next level migas affogato aesthetic 3 wolf moon taiyaki put a bird on it. Tilde taiyaki raw denim pickled photo booth farm-to-table sustainable single-origin coffee +1 blue bottle raclette beard biodiesel. Bicycle rights twee copper mug, lo-fi sustainable selvage enamel pin actually brunch air plant hot chicken readymade vape. 3 wolf moon keytar gastropub photo booth YOLO ennui yuccie squid keffiyeh, cold-pressed kombucha whatever aesthetic."}, "commit"=>"Update Post", "id"=>"3"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:46
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:27
+  [1m[36mPost Update (1.3ms)[0m  [1m[33mUPDATE "posts" SET "content" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["content", "Mlkshk meditation wayfarers lomo flannel occupy. Gluten-free blog selvage, hammock unicorn palo santo fanny pack freegan man braid glossier try-hard 3 wolf moon tacos. Food truck blue bottle pop-up, seitan crucifix polaroid flexitarian sartorial four loko snackwave literally lo-fi actually vice. Paleo cray fashion axe deep v celiac.\r\n\r\n```ruby\r\nputs \"Hello world!\"\r\n```\r\n\r\nChartreuse gastropub selfies chillwave cloud bread irony retro slow-carb twee whatever you probably haven't heard of them street art intelligentsia flexitarian. Normcore DIY pork belly subway tile 8-bit selvage. 8-bit hot chicken bicycle rights quinoa hashtag whatever copper mug umami sriracha hell of. Snackwave gastropub brooklyn, swag trust fund farm-to-table glossier hell of next level migas affogato aesthetic 3 wolf moon taiyaki put a bird on it. Tilde taiyaki raw denim pickled photo booth farm-to-table sustainable single-origin coffee +1 blue bottle raclette beard biodiesel. Bicycle rights twee copper mug, lo-fi sustainable selvage enamel pin actually brunch air plant hot chicken readymade vape. 3 wolf moon keytar gastropub photo booth YOLO ennui yuccie squid keffiyeh, cold-pressed kombucha whatever aesthetic."], ["updated_at", "2018-09-20 02:44:46.118174"], ["id", 3]]
+  ↳ app/controllers/posts_controller.rb:27
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:27
+Redirected to http://localhost:3000/posts/3
+Completed 302 Found in 15ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/posts/3" for 127.0.0.1 at 2018-09-20 09:44:46 +0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:46
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 80ms (Views: 72.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/3" for 127.0.0.1 at 2018-09-20 09:53:27 +0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:46
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 54ms (Views: 32.4ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/posts/3" for 127.0.0.1 at 2018-09-20 09:53:59 +0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:46
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (8.9ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant ApplicationHelper::Redcarpet):
+     6:       </header>
+     7: 
+     8:       <div id="content">
+     9:         <%= markdown @post.content %>
+    10:       </div>
+    11: 
+    12:       <hr>
+  
+app/helpers/application_helper.rb:3:in `markdown'
+app/views/posts/show.html.erb:9:in `_app_views_posts_show_html_erb__3176247254231888642_70115954229440'
+Started GET "/posts/3" for 127.0.0.1 at 2018-09-20 09:57:31 +0700
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/nayelawickramasuriya/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:46
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (17.6ms)
+Completed 200 OK in 364ms (Views: 341.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts/3/edit" for 127.0.0.1 at 2018-09-20 09:57:50 +0700
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:46
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (30.6ms)
+  Rendered posts/edit.html.erb within layouts/application (33.1ms)
+Completed 200 OK in 66ms (Views: 61.2ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/posts/3" for 127.0.0.1 at 2018-09-20 09:59:11 +0700
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"utEKX2iZ4rvZSNAVxSCN9TI+JL8HV7Q4pZS7Qocp99JwRpDAEj5xCll2oRvodBIJH5wpFcoFI2BKNhDvMv0h2A==", "post"=>{"title"=>"This is a new post", "content"=>"## This is a second level header\r\n\r\nMlkshk meditation wayfarers lomo flannel occupy. Gluten-free blog selvage, hammock unicorn palo santo fanny pack freegan man braid glossier try-hard 3 wolf moon tacos. Food truck blue bottle pop-up, seitan crucifix polaroid flexitarian sartorial four loko snackwave literally lo-fi actually vice. Paleo cray fashion axe deep v celiac.\r\n\r\n```ruby\r\nputs \"Hello world!\"\r\n```\r\n\r\n- This one\r\n- Another one\r\n- No this one\r\n\r\n### Third level header\r\nChartreuse gastropub selfies chillwave cloud bread irony retro slow-carb twee whatever you probably haven't heard of them street art intelligentsia flexitarian. Normcore DIY pork belly subway tile 8-bit selvage. 8-bit hot chicken bicycle rights quinoa hashtag whatever copper mug umami sriracha hell of. Snackwave gastropub brooklyn, swag trust fund farm-to-table glossier hell of next level migas affogato aesthetic 3 wolf moon taiyaki put a bird on it. Tilde taiyaki raw denim pickled photo booth farm-to-table sustainable single-origin coffee +1 blue bottle raclette beard biodiesel. Bicycle rights twee copper mug, lo-fi sustainable selvage enamel pin actually brunch air plant hot chicken readymade vape. 3 wolf moon keytar gastropub photo booth YOLO ennui yuccie squid keffiyeh, cold-pressed kombucha whatever aesthetic."}, "commit"=>"Update Post", "id"=>"3"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:46
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:27
+  [1m[36mPost Update (1.7ms)[0m  [1m[33mUPDATE "posts" SET "content" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["content", "## This is a second level header\r\n\r\nMlkshk meditation wayfarers lomo flannel occupy. Gluten-free blog selvage, hammock unicorn palo santo fanny pack freegan man braid glossier try-hard 3 wolf moon tacos. Food truck blue bottle pop-up, seitan crucifix polaroid flexitarian sartorial four loko snackwave literally lo-fi actually vice. Paleo cray fashion axe deep v celiac.\r\n\r\n```ruby\r\nputs \"Hello world!\"\r\n```\r\n\r\n- This one\r\n- Another one\r\n- No this one\r\n\r\n### Third level header\r\nChartreuse gastropub selfies chillwave cloud bread irony retro slow-carb twee whatever you probably haven't heard of them street art intelligentsia flexitarian. Normcore DIY pork belly subway tile 8-bit selvage. 8-bit hot chicken bicycle rights quinoa hashtag whatever copper mug umami sriracha hell of. Snackwave gastropub brooklyn, swag trust fund farm-to-table glossier hell of next level migas affogato aesthetic 3 wolf moon taiyaki put a bird on it. Tilde taiyaki raw denim pickled photo booth farm-to-table sustainable single-origin coffee +1 blue bottle raclette beard biodiesel. Bicycle rights twee copper mug, lo-fi sustainable selvage enamel pin actually brunch air plant hot chicken readymade vape. 3 wolf moon keytar gastropub photo booth YOLO ennui yuccie squid keffiyeh, cold-pressed kombucha whatever aesthetic."], ["updated_at", "2018-09-20 02:59:11.786148"], ["id", 3]]
+  ↳ app/controllers/posts_controller.rb:27
+  [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:27
+Redirected to http://localhost:3000/posts/3
+Completed 302 Found in 37ms (ActiveRecord: 4.8ms)
+
+
+Started GET "/posts/3" for 127.0.0.1 at 2018-09-20 09:59:11 +0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:46
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 32ms (Views: 28.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/3" for 127.0.0.1 at 2018-09-20 10:02:34 +0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:46
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 51ms (Views: 47.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/3/edit" for 127.0.0.1 at 2018-09-20 10:04:00 +0700
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:46
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (2.6ms)
+  Rendered posts/edit.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 50ms (Views: 33.8ms | ActiveRecord: 0.9ms)
+
+
+Started PATCH "/posts/3" for 127.0.0.1 at 2018-09-20 10:04:35 +0700
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ThTGYzb+7pmHsD0adqYf9f+d9h47ergnMR50IaFit92Eg1z8TFl9KAeOTBRb8oAJ0j/7tPYoL3/evN+MFLZh1w==", "post"=>{"title"=>"This is a new post", "content"=>"## This is a second level header\r\n\r\nMlkshk meditation wayfarers lomo flannel occupy. Gluten-free blog selvage, hammock unicorn palo santo fanny pack freegan man braid glossier try-hard 3 wolf moon tacos. Food truck blue bottle pop-up, seitan crucifix polaroid flexitarian sartorial four loko snackwave literally lo-fi actually vice. Paleo cray fashion axe deep v celiac.\r\n\r\n```ruby\r\nputs \"Hello world!\"\r\n```\r\n\r\n- This one\r\n- Another one\r\n- No this one\r\n\r\n```ruby\r\nclass PostsController < ApplicationController\r\n  before_action :find_post, only: [:show, :edit, :update, :destroy]\r\n  def index\r\n  end\r\n\r\n  def new\r\n    @post = Post.new\r\n  end\r\n\r\n  def create\r\n    @post = Post.new(post_params)\r\n\r\n    if @post.save\r\n      redirect_to @post, notice: \"Your article was successfully saved\"\r\n    else\r\n      render 'new', notice: \"Warning - post not saved\"\r\n    end\r\n  end\r\n\r\n  def show\r\n  end\r\n\r\n  def edit\r\n  end\r\n\r\n  def update\r\n    if @post.update(post_params)\r\n      redirect_to @post, notice: \"Your article was successfully saved\"\r\n    else\r\n      render 'edit'\r\n    end\r\n  end\r\n\r\n  def destroy\r\n    @post.destroy\r\n    redirect_to posts_path\r\n  end\r\n\r\n  private\r\n\r\n  def post_params\r\n    params.require(:post).permit(:title, :content)\r\n  end\r\n\r\n  def find_post\r\n    @post = Post.find(params[:id])\r\n  end\r\nend\r\n```\r\n### Third level header\r\nChartreuse gastropub selfies chillwave cloud bread irony retro slow-carb twee whatever you probably haven't heard of them street art intelligentsia flexitarian. Normcore DIY pork belly subway tile 8-bit selvage. 8-bit hot chicken bicycle rights quinoa hashtag whatever copper mug umami sriracha hell of. Snackwave gastropub brooklyn, swag trust fund farm-to-table glossier hell of next level migas affogato aesthetic 3 wolf moon taiyaki put a bird on it. Tilde taiyaki raw denim pickled photo booth farm-to-table sustainable single-origin coffee +1 blue bottle raclette beard biodiesel. Bicycle rights twee copper mug, lo-fi sustainable selvage enamel pin actually brunch air plant hot chicken readymade vape. 3 wolf moon keytar gastropub photo booth YOLO ennui yuccie squid keffiyeh, cold-pressed kombucha whatever aesthetic."}, "commit"=>"Update Post", "id"=>"3"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:46
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:27
+  [1m[36mPost Update (1.0ms)[0m  [1m[33mUPDATE "posts" SET "content" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["content", "## This is a second level header\r\n\r\nMlkshk meditation wayfarers lomo flannel occupy. Gluten-free blog selvage, hammock unicorn palo santo fanny pack freegan man braid glossier try-hard 3 wolf moon tacos. Food truck blue bottle pop-up, seitan crucifix polaroid flexitarian sartorial four loko snackwave literally lo-fi actually vice. Paleo cray fashion axe deep v celiac.\r\n\r\n```ruby\r\nputs \"Hello world!\"\r\n```\r\n\r\n- This one\r\n- Another one\r\n- No this one\r\n\r\n```ruby\r\nclass PostsController < ApplicationController\r\n  before_action :find_post, only: [:show, :edit, :update, :destroy]\r\n  def index\r\n  end\r\n\r\n  def new\r\n    @post = Post.new\r\n  end\r\n\r\n  def create\r\n    @post = Post.new(post_params)\r\n\r\n    if @post.save\r\n      redirect_to @post, notice: \"Your article was successfully saved\"\r\n    else\r\n      render 'new', notice: \"Warning - post not saved\"\r\n    end\r\n  end\r\n\r\n  def show\r\n  end\r\n\r\n  def edit\r\n  end\r\n\r\n  def update\r\n    if @post.update(post_params)\r\n      redirect_to @post, notice: \"Your article was successfully saved\"\r\n    else\r\n      render 'edit'\r\n    end\r\n  end\r\n\r\n  def destroy\r\n    @post.destroy\r\n    redirect_to posts_path\r\n  end\r\n\r\n  private\r\n\r\n  def post_params\r\n    params.require(:post).permit(:title, :content)\r\n  end\r\n\r\n  def find_post\r\n    @post = Post.find(params[:id])\r\n  end\r\nend\r\n```\r\n### Third level header\r\nChartreuse gastropub selfies chillwave cloud bread irony retro slow-carb twee whatever you probably haven't heard of them street art intelligentsia flexitarian. Normcore DIY pork belly subway tile 8-bit selvage. 8-bit hot chicken bicycle rights quinoa hashtag whatever copper mug umami sriracha hell of. Snackwave gastropub brooklyn, swag trust fund farm-to-table glossier hell of next level migas affogato aesthetic 3 wolf moon taiyaki put a bird on it. Tilde taiyaki raw denim pickled photo booth farm-to-table sustainable single-origin coffee +1 blue bottle raclette beard biodiesel. Bicycle rights twee copper mug, lo-fi sustainable selvage enamel pin actually brunch air plant hot chicken readymade vape. 3 wolf moon keytar gastropub photo booth YOLO ennui yuccie squid keffiyeh, cold-pressed kombucha whatever aesthetic."], ["updated_at", "2018-09-20 03:04:35.684723"], ["id", 3]]
+  ↳ app/controllers/posts_controller.rb:27
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:27
+Redirected to http://localhost:3000/posts/3
+Completed 302 Found in 12ms (ActiveRecord: 3.4ms)
+
+
+Started GET "/posts/3" for 127.0.0.1 at 2018-09-20 10:04:35 +0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:46
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 56ms (Views: 46.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts/3" for 127.0.0.1 at 2018-09-20 10:06:19 +0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:46
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 47ms (Views: 30.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/posts/3" for 127.0.0.1 at 2018-09-20 10:07:11 +0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:46
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (352.9ms)
+Completed 200 OK in 409ms (Views: 386.8ms | ActiveRecord: 1.4ms)
+
+
