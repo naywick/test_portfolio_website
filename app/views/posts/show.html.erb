@@ -1,8 +1,27 @@
-<%= @post.title %><br>
-<%= @post.content %>
+ <div id="post_show_content" class="skinny_wrapper wrapper_padding">
+      <header>
+        <p class="date"><%= l Date.current %></p>
+        <h1><%= @post.title %></h1>
+        <hr>
+      </header>
 
-<br>
-<br>
+      <div id="content">
+        <%= @post.content %>
+      </div>
 
-<%= link_to "Edit", edit_post_path(@post) %>
-<%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you sure you want to delete this post?"} %>
+      <hr>
+
+      <div id="share_box">
+        <p>Share</p>
+          <!-- Twitter -->
+          <a onclick="javascript:window.open('https://twitter.com/intent/tweet?text=<%= @post.title %> by @nayelawick - &amp;url=<%= url_for([@post, {only_path: false}]) %>', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fab fa-twitter twitter-share-button"></i></a>
+          <!-- Facebook -->
+          <a onclick="javascript:window.open('http://www.facebook.com/sharer.php?u=<%= url_for([@post, {only_path: false}]) %>', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fab fa-facebook"></i></a>
+          <!-- Email -->
+          <a href="mailto:?subject=I wanted you to see this site&amp;body=Check out this site http://www.website.com."
+          title="Share by Email"><i class="fas fa-envelope"></i></a>
+      </div>
+
+      <hr>
+
+    </div>
