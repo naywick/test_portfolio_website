@@ -388,6 +388,13 @@
 		"oAP": "\/app\/views\/layouts\/mailer.text.erb",
 		"oF": 0
 		},
+	"\/app\/views\/posts\/_disqus.html.erb": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/app\/views\/posts\/_disqus.html.erb",
+		"oF": 0
+		},
 	"\/app\/views\/posts\/_form.html.erb": {
 		"cB": 0,
 		"ft": 8192,
@@ -937,6 +944,13 @@
 		"ft": 65536,
 		"oA": 1,
 		"oAP": "\/build\/tmp\/cache",
+		"oF": 0
+		},
+	"\/tmp\/pids\/server.pid": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/tmp\/pids\/server.pid",
 		"oF": 0
 		},
 	"\/tmp\/restart.txt": {
