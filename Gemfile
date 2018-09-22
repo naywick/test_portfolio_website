@@ -27,6 +27,7 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'pygments.rb', '~> 1.2.1'
 gem 'redcarpet', '~> 3.4.0'
+gem 'friendly_id', '~> 5.2', '>= 5.2.4'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'

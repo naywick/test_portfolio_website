@@ -598,6 +598,13 @@
 		"oAP": "\/config\/initializers\/filter_parameter_logging.rb",
 		"oF": 0
 		},
+	"\/config\/initializers\/friendly_id.rb": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/config\/initializers\/friendly_id.rb",
+		"oF": 0
+		},
 	"\/config\/initializers\/inflections.rb": {
 		"cB": 0,
 		"ft": 8192,
@@ -680,6 +687,20 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/db\/migrate\/20180922040407_create_active_storage_tables.active_storage.rb",
+		"oF": 0
+		},
+	"\/db\/migrate\/20180922070304_create_friendly_id_slugs.rb": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/db\/migrate\/20180922070304_create_friendly_id_slugs.rb",
+		"oF": 0
+		},
+	"\/db\/migrate\/20180922070401_add_slug_to_posts.rb": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/db\/migrate\/20180922070401_add_slug_to_posts.rb",
 		"oF": 0
 		},
 	"\/db\/schema.rb": {
