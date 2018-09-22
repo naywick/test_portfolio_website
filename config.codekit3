@@ -668,6 +668,13 @@
 		"oAP": "\/db\/migrate\/20180918124726_create_posts.rb",
 		"oF": 0
 		},
+	"\/db\/migrate\/20180922040407_create_active_storage_tables.active_storage.rb": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/db\/migrate\/20180922040407_create_active_storage_tables.active_storage.rb",
+		"oF": 0
+		},
 	"\/db\/schema.rb": {
 		"cB": 0,
 		"ft": 8192,
