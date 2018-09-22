@@ -9,6 +9,13 @@
 	],
 "creatorBuild": "26680",
 "files": {
+	"\/.bundle\/config": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/.bundle\/config",
+		"oF": 0
+		},
 	"\/app\/assets\/config\/manifest.js": {
 		"ft": 64,
 		"ma": 0,
@@ -923,13 +930,6 @@
 		"ft": 65536,
 		"oA": 1,
 		"oAP": "\/build\/tmp\/cache",
-		"oF": 0
-		},
-	"\/tmp\/pids\/server.pid": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/tmp\/pids\/server.pid",
 		"oF": 0
 		},
 	"\/tmp\/restart.txt": {
