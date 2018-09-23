@@ -60,6 +60,17 @@
 		"oAP": "\/app\/assets\/javascripts\/channels\/.keep",
 		"oF": 0
 		},
+	"\/app\/assets\/javascripts\/contacts.coffee": {
+		"ft": 32,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/app\/assets\/javascripts\/contacts.js",
+		"oF": 0,
+		"oS": 0,
+		"sC": 1,
+		"tS": 1
+		},
 	"\/app\/assets\/javascripts\/posts.coffee": {
 		"ft": 32,
 		"ma": 0,
@@ -170,6 +181,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/app\/assets\/stylesheets\/config\/_pygments.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/app\/assets\/stylesheets\/contacts.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/app\/assets\/stylesheets\/contacts.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -293,6 +317,13 @@
 		"oAP": "\/app\/controllers\/concerns\/.keep",
 		"oF": 0
 		},
+	"\/app\/controllers\/contacts_controller.rb": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/controllers\/contacts_controller.rb",
+		"oF": 0
+		},
 	"\/app\/controllers\/posts_controller.rb": {
 		"cB": 0,
 		"ft": 8192,
@@ -319,6 +350,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/app\/helpers\/application_helper.rb",
+		"oF": 0
+		},
+	"\/app\/helpers\/contacts_helper.rb": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/helpers\/contacts_helper.rb",
 		"oF": 0
 		},
 	"\/app\/helpers\/posts_helper.rb": {
@@ -370,6 +408,13 @@
 		"oAP": "\/app\/models\/concerns\/.keep",
 		"oF": 0
 		},
+	"\/app\/models\/contact.rb": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/models\/contact.rb",
+		"oF": 0
+		},
 	"\/app\/models\/post.rb": {
 		"cB": 0,
 		"ft": 8192,
@@ -403,6 +448,20 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/app\/views\/contact.html",
+		"oF": 0
+		},
+	"\/app\/views\/contacts\/create.html.erb": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/views\/contacts\/create.html.erb",
+		"oF": 0
+		},
+	"\/app\/views\/contacts\/new.html.erb": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/views\/contacts\/new.html.erb",
 		"oF": 0
 		},
 	"\/app\/views\/index.html": {
@@ -962,6 +1021,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/test\/controllers\/.keep",
+		"oF": 0
+		},
+	"\/test\/controllers\/contacts_controller_test.rb": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/test\/controllers\/contacts_controller_test.rb",
 		"oF": 0
 		},
 	"\/test\/controllers\/posts_controller_test.rb": {
