@@ -71,6 +71,17 @@
 		"sC": 1,
 		"tS": 1
 		},
+	"\/app\/assets\/javascripts\/projects.coffee": {
+		"ft": 32,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/app\/assets\/javascripts\/projects.js",
+		"oF": 0,
+		"oS": 0,
+		"sC": 1,
+		"tS": 1
+		},
 	"\/app\/assets\/javascripts\/welcome.coffee": {
 		"ft": 32,
 		"ma": 0,
@@ -228,6 +239,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/app\/assets\/stylesheets\/projects.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/app\/assets\/stylesheets\/projects.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/app\/assets\/stylesheets\/welcome.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -276,6 +300,13 @@
 		"oAP": "\/app\/controllers\/posts_controller.rb",
 		"oF": 0
 		},
+	"\/app\/controllers\/projects_controller.rb": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/controllers\/projects_controller.rb",
+		"oF": 0
+		},
 	"\/app\/controllers\/welcome_controller.rb": {
 		"cB": 0,
 		"ft": 8192,
@@ -295,6 +326,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/app\/helpers\/posts_helper.rb",
+		"oF": 0
+		},
+	"\/app\/helpers\/projects_helper.rb": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/helpers\/projects_helper.rb",
 		"oF": 0
 		},
 	"\/app\/helpers\/welcome_helper.rb": {
@@ -337,6 +375,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/app\/models\/post.rb",
+		"oF": 0
+		},
+	"\/app\/models\/project.rb": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/models\/project.rb",
 		"oF": 0
 		},
 	"\/app\/views\/article_show.html": {
@@ -428,6 +473,34 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/app\/views\/posts\/show.html.erb",
+		"oF": 0
+		},
+	"\/app\/views\/projects\/_form.html.erb": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/views\/projects\/_form.html.erb",
+		"oF": 0
+		},
+	"\/app\/views\/projects\/index.html.erb": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/views\/projects\/index.html.erb",
+		"oF": 0
+		},
+	"\/app\/views\/projects\/new.html.erb": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/views\/projects\/new.html.erb",
+		"oF": 0
+		},
+	"\/app\/views\/projects\/show.html.erb": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/views\/projects\/show.html.erb",
 		"oF": 0
 		},
 	"\/app\/views\/welcome\/index.html.erb": {
@@ -703,6 +776,13 @@
 		"oAP": "\/db\/migrate\/20180922070401_add_slug_to_posts.rb",
 		"oF": 0
 		},
+	"\/db\/migrate\/20180923042927_create_projects.rb": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/db\/migrate\/20180923042927_create_projects.rb",
+		"oF": 0
+		},
 	"\/db\/schema.rb": {
 		"cB": 0,
 		"ft": 8192,
@@ -877,6 +957,13 @@
 		"oAP": "\/test\/controllers\/posts_controller_test.rb",
 		"oF": 0
 		},
+	"\/test\/controllers\/projects_controller_test.rb": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/test\/controllers\/projects_controller_test.rb",
+		"oF": 0
+		},
 	"\/test\/controllers\/welcome_controller_test.rb": {
 		"cB": 0,
 		"ft": 8192,
@@ -903,6 +990,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/test\/fixtures\/posts.yml",
+		"oF": 0
+		},
+	"\/test\/fixtures\/projects.yml": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/test\/fixtures\/projects.yml",
 		"oF": 0
 		},
 	"\/test\/helpers\/.keep": {
@@ -938,6 +1032,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/test\/models\/post_test.rb",
+		"oF": 0
+		},
+	"\/test\/models\/project_test.rb": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/test\/models\/project_test.rb",
 		"oF": 0
 		},
 	"\/test\/system\/.keep": {
