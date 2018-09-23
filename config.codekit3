@@ -429,6 +429,13 @@
 		"oAP": "\/app\/models\/project.rb",
 		"oF": 0
 		},
+	"\/app\/models\/user.rb": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/models\/user.rb",
+		"oF": 0
+		},
 	"\/app\/views\/article_show.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -462,6 +469,97 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/app\/views\/contacts\/new.html.erb",
+		"oF": 0
+		},
+	"\/app\/views\/devise\/confirmations\/new.html.erb": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/views\/devise\/confirmations\/new.html.erb",
+		"oF": 0
+		},
+	"\/app\/views\/devise\/mailer\/confirmation_instructions.html.erb": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/views\/devise\/mailer\/confirmation_instructions.html.erb",
+		"oF": 0
+		},
+	"\/app\/views\/devise\/mailer\/email_changed.html.erb": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/views\/devise\/mailer\/email_changed.html.erb",
+		"oF": 0
+		},
+	"\/app\/views\/devise\/mailer\/password_change.html.erb": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/views\/devise\/mailer\/password_change.html.erb",
+		"oF": 0
+		},
+	"\/app\/views\/devise\/mailer\/reset_password_instructions.html.erb": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/views\/devise\/mailer\/reset_password_instructions.html.erb",
+		"oF": 0
+		},
+	"\/app\/views\/devise\/mailer\/unlock_instructions.html.erb": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/views\/devise\/mailer\/unlock_instructions.html.erb",
+		"oF": 0
+		},
+	"\/app\/views\/devise\/passwords\/edit.html.erb": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/views\/devise\/passwords\/edit.html.erb",
+		"oF": 0
+		},
+	"\/app\/views\/devise\/passwords\/new.html.erb": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/views\/devise\/passwords\/new.html.erb",
+		"oF": 0
+		},
+	"\/app\/views\/devise\/registrations\/edit.html.erb": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/views\/devise\/registrations\/edit.html.erb",
+		"oF": 0
+		},
+	"\/app\/views\/devise\/registrations\/new.html.erb": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/views\/devise\/registrations\/new.html.erb",
+		"oF": 0
+		},
+	"\/app\/views\/devise\/sessions\/new.html.erb": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/views\/devise\/sessions\/new.html.erb",
+		"oF": 0
+		},
+	"\/app\/views\/devise\/shared\/_links.html.erb": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/app\/views\/devise\/shared\/_links.html.erb",
+		"oF": 0
+		},
+	"\/app\/views\/devise\/unlocks\/new.html.erb": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/views\/devise\/unlocks\/new.html.erb",
 		"oF": 0
 		},
 	"\/app\/views\/index.html": {
@@ -730,6 +828,13 @@
 		"oAP": "\/config\/initializers\/cookies_serializer.rb",
 		"oF": 0
 		},
+	"\/config\/initializers\/devise.rb": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/config\/initializers\/devise.rb",
+		"oF": 0
+		},
 	"\/config\/initializers\/filter_parameter_logging.rb": {
 		"cB": 0,
 		"ft": 8192,
@@ -763,6 +868,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/config\/initializers\/wrap_parameters.rb",
+		"oF": 0
+		},
+	"\/config\/locales\/devise.en.yml": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/config\/locales\/devise.en.yml",
 		"oF": 0
 		},
 	"\/config\/locales\/en.yml": {
@@ -854,6 +966,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/db\/migrate\/20180923064825_add_slug_to_projects.rb",
+		"oF": 0
+		},
+	"\/db\/migrate\/20180923102722_devise_create_users.rb": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/db\/migrate\/20180923102722_devise_create_users.rb",
 		"oF": 0
 		},
 	"\/db\/schema.rb": {
@@ -1079,6 +1198,13 @@
 		"oAP": "\/test\/fixtures\/projects.yml",
 		"oF": 0
 		},
+	"\/test\/fixtures\/users.yml": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/test\/fixtures\/users.yml",
+		"oF": 0
+		},
 	"\/test\/helpers\/.keep": {
 		"cB": 0,
 		"ft": 8192,
@@ -1119,6 +1245,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/test\/models\/project_test.rb",
+		"oF": 0
+		},
+	"\/test\/models\/user_test.rb": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/test\/models\/user_test.rb",
 		"oF": 0
 		},
 	"\/test\/system\/.keep": {
