@@ -435,6 +435,19 @@ input[type="submit"], .button {
     border: 2px solid #53FEA2;
     color: #53FEA2; }
 
+.project_button {
+  background: #53FEA2;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 1em 2em;
+  border-radius: 2px; }
+  .project_button:hover {
+    background: #424652; }
+
+.button_wrapper {
+  margin: 4em 0 0 0;
+  text-align: center; }
+
 .col-1, .col-2, .col-3 {
   float: left; }
 
