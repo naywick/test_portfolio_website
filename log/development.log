@@ -3508,3 +3508,5 @@ Migrating to AddSlugToProjects (20180923064825)
   [1m[36mProject Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "projects" WHERE "projects"."id" != 1 AND "projects"."slug" = ? LIMIT ?[0m  [["slug", "portfolio-website"], ["LIMIT", 1]]
   [1m[36mProject Update (0.7ms)[0m  [1m[33mUPDATE "projects" SET "slug" = ?, "updated_at" = ? WHERE "projects"."id" = ?[0m  [["slug", "portfolio-website"], ["updated_at", "2018-09-23 06:50:59.663882"], ["id", 1]]
   [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProject Load (1.9ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "projects"[0m
