@@ -110,16 +110,6 @@
 		"oAP": "\/build\/app\/assets\/node_modules",
 		"oF": 0
 		},
-	"\/app\/assets\/stylesheets\/application.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/app\/assets\/stylesheets\/application-min.css",
-		"oF": 0,
-		"oS": 3
-		},
 	"\/app\/assets\/stylesheets\/application.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -211,19 +201,6 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"\/app\/assets\/stylesheets\/pages\/_general.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/app\/assets\/stylesheets\/pages\/_general.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
 	"\/app\/assets\/stylesheets\/pages\/_index.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -233,19 +210,6 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/app\/assets\/stylesheets\/pages\/_index.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/app\/assets\/stylesheets\/pages\/_posts_projects.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/app\/assets\/stylesheets\/pages\/_posts_projects.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -429,13 +393,6 @@
 		"oAP": "\/app\/models\/project.rb",
 		"oF": 0
 		},
-	"\/app\/models\/user.rb": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/app\/models\/user.rb",
-		"oF": 0
-		},
 	"\/app\/views\/article_show.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -541,13 +498,6 @@
 		"oAP": "\/app\/views\/devise\/registrations\/new.html.erb",
 		"oF": 0
 		},
-	"\/app\/views\/devise\/sessions\/new.html.erb": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/app\/views\/devise\/sessions\/new.html.erb",
-		"oF": 0
-		},
 	"\/app\/views\/devise\/shared\/_links.html.erb": {
 		"cB": 0,
 		"ft": 8192,
@@ -567,13 +517,6 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/app\/views\/index.html",
-		"oF": 0
-		},
-	"\/app\/views\/layouts\/application.html.erb": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/app\/views\/layouts\/application.html.erb",
 		"oF": 0
 		},
 	"\/app\/views\/layouts\/mailer.html.erb": {
@@ -604,32 +547,11 @@
 		"oAP": "\/app\/views\/posts\/_form.html.erb",
 		"oF": 0
 		},
-	"\/app\/views\/posts\/edit.html.erb": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/app\/views\/posts\/edit.html.erb",
-		"oF": 0
-		},
 	"\/app\/views\/posts\/index.html.erb": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/app\/views\/posts\/index.html.erb",
-		"oF": 0
-		},
-	"\/app\/views\/posts\/new.html.erb": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/app\/views\/posts\/new.html.erb",
-		"oF": 0
-		},
-	"\/app\/views\/posts\/show.html.erb": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/app\/views\/posts\/show.html.erb",
 		"oF": 0
 		},
 	"\/app\/views\/projects\/_form.html.erb": {
@@ -639,32 +561,11 @@
 		"oAP": "\/app\/views\/projects\/_form.html.erb",
 		"oF": 0
 		},
-	"\/app\/views\/projects\/edit.html.erb": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/app\/views\/projects\/edit.html.erb",
-		"oF": 0
-		},
 	"\/app\/views\/projects\/index.html.erb": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/app\/views\/projects\/index.html.erb",
-		"oF": 0
-		},
-	"\/app\/views\/projects\/new.html.erb": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/app\/views\/projects\/new.html.erb",
-		"oF": 0
-		},
-	"\/app\/views\/projects\/show.html.erb": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/app\/views\/projects\/show.html.erb",
 		"oF": 0
 		},
 	"\/app\/views\/welcome\/index.html.erb": {
@@ -898,13 +799,6 @@
 		"oAP": "\/config\/puma.rb",
 		"oF": 0
 		},
-	"\/config\/routes.rb": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/config\/routes.rb",
-		"oF": 0
-		},
 	"\/config\/spring.rb": {
 		"cB": 0,
 		"ft": 8192,
@@ -917,13 +811,6 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/config\/storage.yml",
-		"oF": 0
-		},
-	"\/db\/development.sqlite3": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/db\/development.sqlite3",
 		"oF": 0
 		},
 	"\/db\/migrate\/20180918124726_create_posts.rb": {
