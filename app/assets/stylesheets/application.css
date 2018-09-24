@@ -331,6 +331,11 @@ body {
 .hidden {
   display: none; }
 
+.notice, .alert {
+  text-align: center;
+  padding: 1em 0;
+  border-bottom: 1px solid #E9E9E9; }
+
 h1, h2, h3, h4, h5, h6, p, ul, li {
   color: #424652; }
 
@@ -539,6 +544,22 @@ input[type="submit"], .button {
       color: #53FEA2;
       cursor: pointer; }
 
+.admin_links {
+  border-top: 1px solid #E9E9E9;
+  border-bottom: 1px solid #E9E9E9;
+  text-align: center;
+  padding: 1em 0;
+  margin: 3em 0; }
+  .admin_links a {
+    color: #9A9DA4;
+    margin: 0 1em;
+    font-weight: 700;
+    font-size: .8em;
+    text-transform: uppercase;
+    text-decoration: none; }
+    .admin_links a:hover {
+      color: #53FEA2; }
+
 .pagination:before,
 .pagination:after {
   content: " ";
@@ -649,6 +670,22 @@ html, body {
     #share_box i:hover {
       color: #53FEA2;
       cursor: pointer; }
+
+.admin_links {
+  border-top: 1px solid #E9E9E9;
+  border-bottom: 1px solid #E9E9E9;
+  text-align: center;
+  padding: 1em 0;
+  margin: 3em 0; }
+  .admin_links a {
+    color: #9A9DA4;
+    margin: 0 1em;
+    font-weight: 700;
+    font-size: .8em;
+    text-transform: uppercase;
+    text-decoration: none; }
+    .admin_links a:hover {
+      color: #53FEA2; }
 
 .pagination:before,
 .pagination:after {
