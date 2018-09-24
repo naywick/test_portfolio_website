@@ -14,31 +14,17 @@
   </head>
 
   <body>
-     <header id="main_navigation" class="clearfix">
-      <%= link_to "Nayela Wickramasuriya", root_path, class: "name" %>
-      <nav>
-        <%= link_to "Blog", posts_path %>
-        <%= link_to "Projects", projects_path %>
-        <%= link_to "Contact", new_contact_path %>
-        <% if user_signed_in? %>
-          <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
-        <% end %>
-      </nav>
-    </header>
+
+    <%= render 'shared/navbar' %>
+
     <% if notice %>
         <p class="notice"><%= notice %></p>
       <% elsif alert %>
         <p class="alert"><%= alert %></p>
       <% end %>
+
     <%= yield %>
 
-    <footer id="main_footer">
-      <p class="copyright">&copy  Nayela Wickramasuriya 2018</p>
-      <nav>
-        <a href="https://twitter.com/nayelawick" target="_blank"><i class="fab fa-twitter"></i></a>
-        <a href="https://github.com/naywick" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/nayela-wickramasuriya/" target="_blank"><i class="fab fa-linkedin"></i></a>
-      </nav>
-    </footer>
+    <%= render 'shared/footer' %>
   </body>
 </html>

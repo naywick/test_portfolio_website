@@ -1,25 +1,38 @@
+
+<div class="banner">
+  <div class="banner-content">
+    <h1>Fullstack Web <br> Developer</h1>
+    <p>I build bespoke websites for individuals and small to medium businesses</p>
+    <div class="button_wrapper">
+        <a href="<%= projects_path %>" class="project_button" target="_blank">View my Work</a>
+      </div>
+  </div>
+</div>
+
 <div class="wrapper wrapper_padding  clearfix">
-      <div class="col-1 about homepage_content">
-        <h2>About</h2>
-        <hr>
-        <p>I am a fullstack Ruby on Rails developer and consultant, living in London, UK.</p>
-        <p>I can help you showcase your portfolio and skillset in the best possible manner, with an approach tailored to your achievements, and beautifully present your blog in a way that aligns with your core values and aims. I also build websites and web applications which expand to match the growth rate of your business, to provide both you and your clients an enjoyable, effortless and seamless user experience.</a></p>
-        <p>As a former corporate investigator and strategic communications specialist, I can also provide advice on business strategy, and on how you can best reach your target audiences.</p>
-      </div>
-      <div class="col-2 homepage_content">
-        <h2>Things I've Written</h2>
-        <hr>
-        <% @posts.each do |post| %>
-          <h3><a href="#"><%= link_to post.title, post %></a></h3>
-          <p class="date"><%= post.created_at.strftime('%e %B %Y') %></p>
-        <% end %>
-      </div>
-      <div class="col-3 homepage_content">
-        <h2>Things I've Built</h2>
-        <hr>
-        <% @projects.each do |project| %>
-          <h3><a href="#"><%= link_to project.title, project %></a></h3>
-          <p class="date"><%= project.created_at.strftime('%e %B %Y') %></p>
-        <% end %>
-      </div>
-    </div>
+  <div class="col-1 about homepage_content">
+    <h2>About</h2>
+    <hr>
+    <p>I am a fullstack Ruby on Rails developer and consultant living in London.</p>
+    <p>I can help you showcase your portfolio and skillset in the best possible manner, with an approach tailored to your achievements, and beautifully present your blog in a way that aligns with your core values and aims. I  build websites and web applications which expand to match the growth rate of your business, to provide both you and your clients an enjoyable, effortless and seamless user experience.</a></p>
+    <p>As a former corporate investigator and strategic communications specialist, I can also provide advice on business strategy, and on how you can best reach your target audiences.</p>
+  </div>
+
+  <div class="col-2 homepage_content">
+    <h2>Things I've Written</h2>
+    <hr>
+    <% @posts.each do |post| %>
+      <h3><a href="#"><%= link_to post.title, post %></a></h3>
+      <p class="date"><%= post.created_at.strftime('%e %B %Y') %></p>
+    <% end %>
+  </div>
+
+  <div class="col-3 homepage_content">
+    <h2>Things I've Built</h2>
+    <hr>
+    <% @projects.each do |project| %>
+      <h3><a href="#"><%= link_to project.title, project %></a></h3>
+      <p class="date"><%= project.created_at.strftime('%e %B %Y') %></p>
+    <% end %>
+  </div>
+</div>
