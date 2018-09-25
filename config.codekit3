@@ -33,6 +33,39 @@
 		"oAP": "\/app\/assets\/images\/.keep",
 		"oF": 0
 		},
+	"\/app\/assets\/images\/alejandro-escamilla-6-unsplash.jpg": {
+		"ft": 16384,
+		"iS": 3689207,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/app\/assets\/images\/alejandro-escamilla-6-unsplash.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/app\/assets\/images\/background.jpg": {
+		"ft": 16384,
+		"iS": 207065,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/app\/assets\/images\/background.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/app\/assets\/images\/laptop_desk_white.jpg": {
+		"ft": 16384,
+		"iS": 5057454,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/app\/assets\/images\/laptop_desk_white.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/app\/assets\/images\/markus-spiske-445255-unsplash.jpg": {
 		"ft": 16384,
 		"iS": 6048793,
@@ -61,6 +94,17 @@
 		"jF": 0,
 		"oA": 0,
 		"oAP": "\/app\/assets\/images\/rich-tervet-662093-unsplash.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/app\/assets\/images\/walt-eyes-474592-unsplash.jpg": {
+		"ft": 16384,
+		"iS": 1927322,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/app\/assets\/images\/walt-eyes-474592-unsplash.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -698,6 +742,20 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/app\/views\/projects\/show.html.erb",
+		"oF": 0
+		},
+	"\/app\/views\/shared\/_footer.html.erb": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/app\/views\/shared\/_footer.html.erb",
+		"oF": 0
+		},
+	"\/app\/views\/shared\/_navbar.html.erb": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/app\/views\/shared\/_navbar.html.erb",
 		"oF": 0
 		},
 	"\/app\/views\/welcome\/index.html.erb": {
